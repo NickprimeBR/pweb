@@ -1,203 +1,204 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Notícias</title>
-    <link rel="stylesheet" href="style.css">
 
-    <style> 
+<head>
+
+    <meta charset="UTF-8">
+    <title>Portal de Notícias</title>
+
+    <style>
 
         body{
-        font-family: Arial, sans-serif;
-        background-color: #E8F5E9;
-        margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background:#ececec;
+            margin:0;
         }
 
-        h1{
-            text-align: center;
-            background-color: #2E7D32;
-            color: white;
-            padding: 20px;
-            margin: 0;
+        header{
+            background:#005792;
+            color:white;
+            text-align:center;
+            padding:20px;
         }
 
         nav{
-            background-color: #66BB6A;
-            text-align: center;
-            padding: 12px;
+            background:#003f63;
+            text-align:center;
+            padding:10px;
         }
 
         nav a{
-            text-decoration: none;
-            margin: 10px;
-            padding: 8px 12px;
-        }
-
-        /* Estados dos links */
-
-        nav a:link{
-            color: white;
-        }
-
-        nav a:visited{
-            color: #F1F8E9;
+            text-decoration:none;
+            color:white;
+            padding:8px;
+            margin:10px;
         }
 
         nav a:hover{
-            background-color: #1B5E20;
-            color: white;
-        }
-
-        nav a:active{
-            color: yellow;
+            background:#1d7fc1;
         }
 
         .card{
-            width: 700px;
-            margin: 20px auto;
-            padding: 15px;
-            border: 2px solid #81C784;
-            background-color: white;
+            width:700px;
+            margin:20px auto;
+            padding:15px;
+            border:1px solid #999;
+            background:white;
         }
 
         .card header{
-            color: #2E7D32;
+            background:white;
+            color:#005792;
+            text-align:left;
+            padding:0;
         }
 
         .card img{
-            float: right;
-            width: 120px;
-            margin-left: 15px;
+            float:right;
+            width:150px;
+            margin-left:15px;
         }
 
         .card p{
-            text-align: justify;
-            color: #444;
+            text-align:justify;
         }
 
         .card footer{
-            clear: both;
-            margin-top: 10px;
-            color: #666;
-            font-size: 14px;
+            clear:both;
+            color:gray;
+            margin-top:15px;
         }
 
-    </style>    
+    </style>
 
 </head>
+
 <body>
 
+    <header>
 
-    <h1>Portal de Notícias</h1>
+        <h1>Portal de Notícias</h1>
 
+    </header>
 
     <nav>
+
         <a href="#">Início</a>
         <a href="#">Tecnologia</a>
         <a href="#">Esportes</a>
         <a href="#">Educação</a>
         <a href="#">Contato</a>
+
     </nav>
 
-
     <div class="card">
 
-
         <header>
-            <h2>Tech</h2>
+
+            <h2>Tecnologia</h2>
+
+            <b>Fonte: Tech News Brasil</b>
+
         </header>
 
-
-        <img src="imagens/meta.png" alt="Tecnologia">
-
+        <img src="imagens/meta.jpg">
 
         <p>
-            IA do Facebook vira 'buscador' e vai usar posts de usuários para dar respostas.
+
+            Empresa brasileira desenvolve inteligência artificial capaz de auxiliar estudantes
+            na resolução de exercícios e produção de conteúdos educacionais.
+
         </p>
 
-
         <footer>
-            Publicado em 16/06/2025
-        </footer>
 
+            Publicado em 27/06/2026
+
+        </footer>
 
     </div>
 
-
     <div class="card">
 
-
         <header>
-            <h2>Esporte</h2>
+
+            <h2>Esportes</h2>
+
+            <b>Fonte: Esporte Agora</b>
+
         </header>
 
-
-        <img src="imagens/esporte.png" alt="Esportes">
-
+        <img src="imagens/esporte.png">
 
         <p>
-            River-PI regulariza técnico Marcinho Guerreiro para o Piauiense Série B 2026.
+
+            Seleção brasileira inicia preparação para a Copa do Mundo com novos atletas e
+            expectativa de bons resultados na temporada.
+
         </p>
 
-
         <footer>
-            Publicado em 15/06/2025
-        </footer>
 
+        Publicado em 26/06/2026
+
+        </footer>
 
     </div>
 
-
     <div class="card">
 
-
         <header>
+
             <h2>Educação</h2>
+
+            <b>Fonte: Educação em Foco</b>
+
         </header>
 
-
-        <img src="imagens/educação.png" alt="Educação">
-
+        <img src="imagens/educação.png">
 
         <p>
-            Do Piauí para o Mundo: projeto da SEDUC seleciona 500 estudantes para intercâmbio internacional.
+
+            Instituições federais ampliam a oferta de bolsas de iniciação científica para
+            alunos do ensino superior em todo o país.
+
         </p>
 
-
         <footer>
-            Publicado em 14/06/2025
+
+            Publicado em 25/06/2026
+
         </footer>
 
-
     </div>
-
 
     <div class="card">
 
-
         <header>
-            <h2>Mundo News</h2>
+
+            <h2>Mundo</h2>
+
+            <b>Fonte: Jornal Internacional</b>
+
         </header>
 
-
-        <img src="imagens/mundo.png" alt="Mundo">
-
+        <img src="imagens/mundo.png">
 
         <p>
-            Acordo EUA-Irã: Líderes do G7 tiveram conversas "francas" sobre documento.
+
+            Líderes mundiais participam de conferência sobre mudanças climáticas e discutem
+            novas metas para redução da emissão de gases poluentes.
+
         </p>
 
-
         <footer>
-            Publicado em 13/06/2025
-        </footer>
 
+            Publicado em 24/06/2026
+
+        </footer>
 
     </div>
 
+    </body>
 
-</body>
-</html>
-
-
+    </html>
