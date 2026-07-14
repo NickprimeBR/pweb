@@ -6,6 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Atividade 12 </title>
 
+
+    <style>
+        .pessoa{
+            color:red;
+        }
+
+        .pessoa[data-idade='30']{
+            color:blue
+        }
+
+       
+        .pessoa::before{
+            content: "Nome: " attr(data-nome) " - Idade: " attr(data-idade) " Anos - ";
+        }
+
+        .pessoa::after{
+            content: " - C.P.F: " attr(data-cpf);
+        }
+
+
+    </style>
+
     <script type="text/javascript">
 
 
@@ -14,7 +36,6 @@
 		alert(valor);
 	}
 
-
 </script>
 
 
@@ -22,9 +43,9 @@
 <body>
 
     <ul>
-        <li class="pessoa" onclick="mostravalor(this)" data-idade="20" data-nome="João">  João </li>
-        <li class="pessoa" onclick="mostravalor(this)" data-idade="30" data-nome="José"> José  </li>
-        <li class="pessoa" onclick="mostravalor(this)" data-idade="40" data-nome="Maria"> Maria </li>
+        <li class="pessoa" data-cpf="999" data-idade="20" data-nome="João">  João </li>
+        <li class="pessoa"  data-cpf="888" data-idade="30" data-nome="José"> José  </li>
+        <li class="pessoa"  data-cpf="777" data-idade="40" data-nome="Maria"> Maria </li>
     </ul>
     
 </body>
