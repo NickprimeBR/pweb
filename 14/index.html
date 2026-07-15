@@ -6,9 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Atividade 14 </title>
 
+    <style>
+
+        .box{
+            background: linear-gradient( blue, green);
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 5px #888888 ;
+        }
+
+        .box h1{
+            background: rgba(255,255,255,0.5);
+            text-shadow: 3px 3px 3px orange;
+        }
+
+        .shadow1{
+            background: #e89b9b;
+            height: 300px;
+            width: 600px;
+            box-shadow: 10px 10px 15px gray;
+        }
+
+
+        .shadow2{
+            background: #f3eb93;
+            color: white;
+             height: 300px;
+            width: 600px;
+            box-shadow: 5px 5px 10px gray;
+        }
+
+        .gradiente-linear{
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            background: linear-gradient(to top right, cyan, magenta,gray, lime, red);
+        }
+
+        .gradiente-radial{
+            width:720px;
+            height:160px;
+            margin:50px auto;
+            background: radial-gradient(ellipse,red,orange,green);
+        }
+
+    </style>
+
 </head>
 <body>
    
+    <div class="box">
+
+        <h1> Lorem Ipsum? </h1>
+        <p> É um fato conhecido que um leitor se distrairá com o conteúdo legível de uma página ao analisar seu layout. A vantagem de usar Lorem Ipsum é que ele possui uma distribuição de letras mais ou menos normal, ao contrário de usar frases como "Conteúdo aqui, conteúdo aqui", que o fazem parecer inglês legível. Muitos programas de editoração eletrônica e editores de páginas web agora usam Lorem Ipsum como texto padrão, e uma busca por "lorem ipsum" revelará muitos sites ainda em desenvolvimento. Diversas versões surgiram ao longo dos anos, algumas por acidente, outras propositalmente (com a inserção de humor, por exemplo).</p>
+
+    </div>
+
+    <div class="box shadow1">
+        Shadow 1
+    </div>
+
+    <div class="box shadow2">
+        Shadow 2
+    </div>
+
+    <div class="gradiente-linear"></div>
+
+     <div class="gradiente-radial"></div>
+
     
 </body>
 </html>
